@@ -37,9 +37,9 @@ TemporalFiltering_geneSelection=function(Xdata, sel_genes, sample_ids){
     median_case<- cbind(median_case, apply(Xcase, FUN=median, 1))
     median_control<- cbind(median_control,apply(Xcontrol, FUN=median, 1))
   }
-  c_names<- c("Baseline","3m", "6m","9m","12m")
-  colnames(median_case)<- c_names
-  colnames(median_control)<-c_names
+  #c_names<- c("Baseline","3m", "6m","9m","12m")
+  #colnames(median_case)<- c_names
+  #colnames(median_control)<-c_names
   rownames(median_case)<- rownames(Xdata)
   rownames(median_control)<- rownames(Xdata)
   
